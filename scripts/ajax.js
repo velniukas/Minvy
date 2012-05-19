@@ -37,9 +37,7 @@ function display_sform() {
 					}
 				});
 			}
-			$('#btn_ready_signup').click(function() {
-				$(this).ready_signupFx();
-			});			// signup effects
+			// $('#btn_ready_signup').ready_signupFx();			// signup effects
 			$('#btn_signup_send').click(function() {
 				var email, contact, company, phone;				email = $('#signupEmail').val();				contact = $('#signupContact').val();				company = $('#signupCompany').val();				phone = $('#signupPhone').val();
 				var $resultBox = $('#signupResult');

@@ -135,8 +135,8 @@ a:active, a:visited, a:focus {
 }
 .logo a {
 	display: block;
-	text-indent: -99999px;
-	background: url("../images/bg/logo2.png") no-repeat 0 0;
+	/*text-indent: -99999px;*/
+	/*background: url("../images/bg/logo2.png") no-repeat 0 0;*/
 	height: 145px;
 	width: 146px;
 }
@@ -148,15 +148,15 @@ a:active, a:visited, a:focus {
 	height: 43px;
 	margin: 20px 0 5px;
 	display: block;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	text-align: left;
-	background: url("../images/text/ybitp.png") no-repeat center;
+	/*background: url("../images/text/ybitp.png") no-repeat center;*/
 	position: absolute;
 	top: 21%;
 	left: 10px;
 }
 .zh .big_slogan {
-	background: url("../images/text/zh/ybitp.png") no-repeat center;
+	/*background: url("../images/text/zh/ybitp.png") no-repeat center;*/
 	width: 638px;
 	height: 61px;
 	top: 19%;
@@ -165,24 +165,24 @@ a:active, a:visited, a:focus {
 	text-align: left;
 	display: block;
 	margin: 20px 0 20px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 .page_title {
 	text-align: left;
 	display: block;
 	margin: 20px 0 20px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 #page_home .small_slogan {
 	height: 101px;
 	width: 572px;
-	background: url("../images/text/afmlpcfys.png") no-repeat center;
+	/*background: url("../images/text/afmlpcfys.png") no-repeat center;*/
 	position: absolute;
 	top: 33%;
 	left: 11px;
 }
 .zh #page_home .small_slogan {
-	background: url("../images/text/zh/afmlpcfys.png") no-repeat center;
+	/*background: url("../images/text/zh/afmlpcfys.png") no-repeat center;*/
 	width: 451px;
 	height: 75px;
 }
@@ -193,30 +193,34 @@ a:active, a:visited, a:focus {
 	height: 24px;
 	width: 219px;
 	padding-bottom: 10px;
-	background: url("../images/text/fu.png") no-repeat center;
+	/*background: url("../images/text/fu.png") no-repeat center;*/
 }
 .zh #page_home .title_featuser {
-	background: url("../images/text/zh/fu.png") no-repeat center;
+	/*background: url("../images/text/zh/fu.png") no-repeat center;*/
 	width: 124px;
 	height: 30px;
 }
 #page_feat .page_title {
-	background: url("../images/text/ffb.png") no-repeat center;
+	/*background: url("../images/text/ffb.png") no-repeat center;*/
 	height: 37px;
+	text-align: center;
 }
 .zh #page_feat .page_title {
-	background: url("../images/text/zh/ffb.png") no-repeat center;
+	/*background: url("../images/text/zh/ffb.png") no-repeat center;*/
 	height: 39px;
+	text-align: center;
 }
 #page_pricing .page_title {
-	background: url("../images/text/p1.png") no-repeat center;
+	/*background: url("../images/text/p1.png") no-repeat center;*/
 	height: 40px;
 	margin-bottom: 5px;
+	text-align: center;
 }
 .zh #page_pricing .page_title {
-	background: url("../images/text/zh/p1.png") no-repeat center;
+	/*background: url("../images/text/zh/p1.png") no-repeat center;*/
 	height: 39px;
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
+	text-align: center;	
 }
 #page_pricing .border.nobg {
 	margin-top: 0;
@@ -236,7 +240,7 @@ a:active, a:visited, a:focus {
 }
 #page_whatis .piece_contn {
 	margin: 60px auto;
-	height: 240px;
+	height: 340px;
 }
 h1, h2, h3, h4, h5, h6, p {
 	margin: 0;
@@ -417,6 +421,7 @@ p {
 	color: #232323;
 	text-transform: capitalize;
 	text-shadow: 0 1px rgba(255,255,255,1);
+	font-size: 22px;
 }
 .piece-f p {
 	color: #494949;
@@ -681,12 +686,13 @@ p {
 }
 .piece.rewards .piece-f h3 {
 	display: block;
-	background: url("../images/text/lp.png") no-repeat center;
+	/*background: url("../images/text/lp.png") no-repeat center;*/
 	height: 30px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
+	
 }
 .zh .piece.rewards .piece-f h3 {
-	background: url("../images/text/zh/lp.png") no-repeat center;
+	/*background: url("../images/text/zh/lp.png") no-repeat center;*/
 	height: 30px;
 }
 .piece.customersphone .piece-f {
@@ -694,12 +700,12 @@ p {
 }
 .piece.customersphone .piece-f h3 {
 	display: block;
-	background: url("../images/text/mm.png") no-repeat center;
+	/*background: url("../images/text/mm.png") no-repeat center;*/
 	height: 30px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 .zh .piece.customersphone .piece-f h3 {
-	background: url("../images/text/zh/mm.png") no-repeat center;
+	/*background: url("../images/text/zh/mm.png") no-repeat center;*/
 	height: 30px;
 }
 .piece.drivesales .piece-f {
@@ -707,12 +713,12 @@ p {
 }
 .piece.drivesales .piece-f h3 {
 	display: block;
-	background: url("../images/text/ds_ca.png") no-repeat center;
+	/*background: url("../images/text/ds_ca.png") no-repeat center;*/
 	height: 30px;
-	text-indent: -9999px;
+	/*/*text-indent: -9999px;*/*/
 }
 .zh .piece.drivesales .piece-f h3 {
-	background: url("../images/text/zh/ds_ca.png") no-repeat center;
+	/*background: url("../images/text/zh/ds_ca.png") no-repeat center;*/
 	height: 30px;
 }
 .dsc .list {
@@ -734,39 +740,39 @@ p {
 	letter-spacing: 1px;
 }
 #page_feat .your_business_mobile h3 {
-	background: url("../images/text/ybm.png") no-repeat left center;
+	/*background: url("../images/text/ybm.png") no-repeat left center;*/
 	width: 451px;
 	display: block;
 	height: 46px;
 	overflow: hidden;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 .zh #page_feat .your_business_mobile h3 {
-	background: url("../images/text/zh/ybm.png") no-repeat left center;
+	/*background: url("../images/text/zh/ybm.png") no-repeat left center;*/
 	width: 367px;	
 }
 #page_feat .customer_analytics h3 {
-	background: url("../images/text/ca.png") no-repeat left center;
+	/*background: url("../images/text/ca.png") no-repeat left center;*/
 	width: 393px;
 	display: block;
 	height: 46px;
 	overflow: hidden;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 .zh #page_feat .customer_analytics h3 {
-	background: url("../images/text/zh/ca.png") no-repeat left center;
+	/*background: url("../images/text/zh/ca.png") no-repeat left center;*/
 	width: 218px;
 }
 #page_feat .easy_setup h3 {
-	background: url("../images/text/es.png") no-repeat left center;
+	/*background: url("../images/text/es.png") no-repeat left center;*/
 	width: 217px;
 	display: block;
 	height: 46px;
 	overflow: hidden;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 }
 .zh #page_feat .easy_setup h3 {
-	background: url("../images/text/zh/es.png") no-repeat left center;
+	/*background: url("../images/text/zh/es.png") no-repeat left center;*/
 	width: 145px;	
 }
 #slide_show {
@@ -820,12 +826,12 @@ p {
 	height: 69px;
 	margin: 20px 0 5px;
 	display: block;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	text-align: left;
-	background: url("../images/text/camrpi10mf.png") no-repeat center;
+	/*background: url("../images/text/camrpi10mf.png") no-repeat center;*/
 }
 .zh #page_home .small_slogan {
-	background: url("../images/text/zh/camrpi10mf.png") no-repeat center;
+	/*background: url("../images/text/zh/camrpi10mf.png") no-repeat center;*/
 	width: 451px;
 	height: 75px;
 }
@@ -842,45 +848,46 @@ p {
 	height: 46px;
 	margin: 20px 0 5px;
 	display: block;
-	text-indent: -9999px;
-	text-align: left;
-	background: url("../images/text/hiw.png") no-repeat center;
+	/*text-indent: -9999px;*/
+	text-align: center;
+	/*background: url("../images/text/hiw.png") no-repeat center;*/
 }
 .zh #page_whatis .other_slogan h2 {
-	background: url("../images/text/zh/hiw.png") no-repeat center;
+	/*background: url("../images/text/zh/hiw.png") no-repeat center;*/
 }
 #page_whatis .other_slogan p {
 	display: block;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	text-align: left;
 	height: 47px;
 	margin: 20px 0 20px;
-	background: url("../images/text/tplcos.png") no-repeat center;
+	/*background: url("../images/text/tplcos.png") no-repeat center;*/
 }
 .zh #page_whatis .other_slogan p {
-	background: url("../images/text/zh/tplcos.png") no-repeat center;
+	/*background: url("../images/text/zh/tplcos.png") no-repeat center;*/
 }
 #page_whatis .col3 .piece2 {
-	background: url("../images/bg/card.png") no-repeat top;
+	/*background: url("../images/bg/card.png") no-repeat top;*/
 }
 #page_whatis .col2 .piece2 {
-	background: url("../images/bg/qr.png") no-repeat top;
+	/*background: url("../images/bg/qr.png") no-repeat top;*/
 }
 #page_whatis .col1 .piece2 {
-	background: url("../images/bg/coffee.png") no-repeat top;
+	/*background: url("../images/bg/coffee.png") no-repeat top;*/
 }
 #page_whatis .col4 .piece2 {
-	background: url("../images/bg/free.png") no-repeat top;
+	/*background: url("../images/bg/free.png") no-repeat top;*/
 }
 #page_whatis .piece-f {
 	padding-top: 150px;
 }
 #ajax_pop_merchants .page_title {
-	background: url("../images/text/msu.png") no-repeat center;
+	/*background: url("../images/text/msu.png") no-repeat center;*/
 	height: 47px;
+	text-align: center;
 }
 .zh #ajax_pop_merchants .page_title {
-	background: url("../images/text/zh/msu.png") no-repeat center;
+	/*background: url("../images/text/zh/msu.png") no-repeat center;*/
 }
 #ajax_pop_merchants p {
 	font-size: 16px;
@@ -888,9 +895,9 @@ p {
 #ajax_pop_merchants .merchants_singup h3 {
 	height: 61px;
 	margin: 20px 0 5px;
-	text-indent: -9999px;
+	/*text-indent: -9999px;*/
 	text-align: left;
-	background: url("../images/text/cyb.png") no-repeat center;
+	/*background: url("../images/text/cyb.png") no-repeat center;*/
 	clear: both;
 	display: none;
 }
@@ -933,7 +940,7 @@ input.styled {
 }
 #btn_signup_send {
 	margin-left: 20px;
-	float: left;
+	float: none;
 	display: inline-block;
 	border-radius: 5px;
 	border: 1px solid gainsboro;
@@ -977,7 +984,7 @@ input.styled {
 .signup_form {
 	overflow: hidden;
 	padding: 3px 0;
-	display: none;
+	/*display: none;*/
 }
 .signup_form .styledFrame {
 	float: left;
@@ -1119,9 +1126,9 @@ input.styled {
 }
 
 #page_pricing .overlay_sepecial .other_slogan p {
-	background: url("../images/text/f50.png") no-repeat center;
+	/*background: url("../images/text/f50.png") no-repeat center;*/
 	display: block;
-	text-indent: -9999px;
+	/*/*text-indent: -9999px;*/*/
 	text-align: left;
 	height: 105px;
 	margin: 15% 0 15%;
@@ -1151,4 +1158,17 @@ input.styled {
 }
 .lang_switch small {
 	
+}
+#signupZone {
+	text-align: center;
+}
+#btn_ready_signup {
+	margin: 0 auto;
+}
+.signUpBtn_wrap {
+	width: 40%;
+	margin: 0 auto;
+}
+.signUpBtn_wrap .styledFrame {
+	margin-top: 8px !important;
 }
