@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -36,3 +37,20 @@ node_modules
 app/node_modules
 app/upload/*
 app/public/quiz/*
+=======
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+npm-debug.log
+>>>>>>> 1321addf78ecb606cc2977bcd47f9991ae09f54a

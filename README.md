@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [Minvy](http://github.com/velniukas/Minvy)
 =================
 
@@ -18,3 +19,9 @@ distributed under the License is distributed on an "AS IS" BASIS,
 WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
+=======
+Minvy
+=====
+
+StartupWeekendHK 2012
+>>>>>>> 1321addf78ecb606cc2977bcd47f9991ae09f54a
