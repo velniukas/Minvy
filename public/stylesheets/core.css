@@ -1,6 +1,6 @@
 /* Global style */
 body {
-	background: url(../img/furley_bg.png);
+	/* background: url(../img/furley_bg.png); */
 }
 footer {
 	margin-top: 30px;
@@ -86,72 +86,10 @@ ul.carousel-inner,  ul.carousel-inner li.item { margin:0; }
 .nav-tabs > .active > a {
 	pointer-events: none; /* Avoid Lock/Double Clicking in sequence: li.active -> li */
 }
-/** IDE **/
-#pageslide {
-	background: #fff url(../img/snow.png);
-	-webkit-box-shadow: inset 0 0 28px 2px rgba(0,0,0,0.4);
-	-moz-shadow: inset 0 0 28px 2px rgba(0,0,0,0.4);
-	box-shadow: inset 0 0 28px 2px rgba(0,0,0,0.4);
-}
 
 .action-bar {
 	margin-bottom: 6px;
 }
-
-/** Video player **/
-.jp-video {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	
-}
-
-/* Chapters */
-
-div.course-header,
-div.chapter-header {
-	margin-bottom: 220px;
-}
-
-div.course-header .course-img,
-div.course-header .course-content,
-div.chapter-header .chapter-content {
-	display: inline-block;
-	float: left;
-}
-
-div.course-header .course-img img {
-	width: auto;
-	height: 200px;
-}
-div.course-header .course-content,
-div.chapter-header .chapter-content {
-	width: 75%;
-	margin: 0px 0px 0px 20px;
-}
-div.course-header .course-content .btn-strip .btn,
-div.chapter-header .chapter-content .btn-strip .btn {
-	margin-right: 10px;
-}
-
-ul.chapters li,
-ul.lessons li {
-	margin: 5px 0;
-	background: white;
-	padding: 10px;
-	border: solid 1px #eee;
-	border-radius: 10px 10px;
-	list-style: none;
-	margin-left: 0;
-	margin-bottom: 18px;
-}
-
-ul.chapters li a, ul.chapters li a h3,
-ul.lessons li a, ul.lessons li a h3 {
-	display: inline;
-}
-
-/* Chapters End */
 
 
 @media screen and (max-width:480px) {
