@@ -1,32 +1,32 @@
-.container(style="background: url(img/hatchyolk-landing-bg.jpg) no-repeat center")
-	p
-	p
-	p
-	.row
+
+.container.container-fluid(style="background: url('/img/hatchyolk-landing-bg.jpg'), no-repeat, center")
+	.row.row-fluid
+		.span12
+	.row.row-fluid
+		.span12
+	.row.row-fluid
 		.span2
 		.span8
-			img(src="img/hatchyolk-logo.png" width="300" height="62" alt="logo" )
-					| Validate Your Startup Ideas</td>
+			img(src="img/hatchyolk-logo.png", width="300", height="62", alt="logo" )
+			| Validate Your Startup Ideas
 		.span2
-	.row
+	.row.row-fluid
 		.span2
-		.span6
+		.span8.strong
 			h2 Make It:
 			p Set up landing page in 15 minutes.
 			h2 Validate It:
 			p Drive users to registration page and collect suitable page data.
 			h2 Be Convenienced:
-			p With scientific statistics, you can effectively convince investors &amp; strategic partners!
-		.span2
+			p With scientific statistics, you can effectively convince investors and strategic partners!
+		.span2.pull-right
 			.auth-page
 				ul.auth-service
 					li.googl
-						a.btn(href='/auth/google') Sign up with Google
+						a.btn.btn-large.btn-info(href='/auth/google') Sign up with Google
 					li.tw
-						a.btn(href='/auth/twitter') Sign up with Twitter
+						a.btn.btn-large.btn-info(href='/auth/twitter') Sign up with Twitter
 					li.fb
-						a.btn(href='/auth/fb') Sign up with Facebook
-		.span2
-	p
-	p
-	p
+						a.btn.btn-large.btn-info(href='/auth/fb') Sign up with Facebook
+	.row.row-fluid
+		.span12

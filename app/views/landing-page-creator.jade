@@ -1,0 +1,41 @@
+.container.container-fluid
+	.row.row-fluid
+		.span3
+		.span6
+			h1.strong Create Your Landing Page
+		.span3
+	.row.row-fluid
+		.span3
+		.span6
+			form#form1.well(name="form1", method="post", action="")
+				.fieldset
+					.control-group
+						.controls
+							label(for="idea-name") Idea Name
+							input#idea-name(type="text",name="idea-name")
+							label(for="category") Category (Optional)
+							input#category(type="text", name="category")
+					.control-group
+						.controls
+							legend
+								h2 Landing:
+							label(for="one-line-pitch") One-line Pitch
+							input#one-line-pitch(name="one-line-pitch", type="text", size="100")
+					.control-group
+						.controls
+							label(for="detailed-pitch") Detailed Pitch
+							textarea#detailed-pitch(name="detailed-pitch", cols="45", rows="5")
+					.control-group
+						.controls
+							legend
+								h2 Registration:
+							label(for="ops-header") Ops Header
+							input#ops-header(name="ops-header", type="text", size="100")
+					.control-group
+						.controls
+							label(for="call-to-action-desc") Call to Action Description
+							textarea#call-to-action-desc(name="call-to-action-desc", cols="45", rows="5")
+					.control-group
+						.controls
+							label(for="response-email") Response Email
+							input#response-email(type="text", name="response-email")
