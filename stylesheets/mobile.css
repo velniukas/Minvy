@@ -1,0 +1,19 @@
+#top-p {
+	position: absolute;
+}
+#top-p .nav-f {
+	position: absolute;
+}
+#top-p span {
+	font-size: 240%;
+}
+#top-p ul.nav li {
+	margin-right: 32px;
+	border-bottom: 1px solid #77b6d5;
+}
+#top-p .nav-in nav {
+	padding: 18px;
+}
+#ajax_pop_merchants {
+	z-index: 9999;
+}
