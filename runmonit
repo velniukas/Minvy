@@ -1,0 +1,1 @@
+sudo start minvymonit -d 60 -c /etc/monit/monitrc

@@ -1,0 +1,48 @@
+.navbar.span12
+	.navbar-inner
+		.container
+			a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+				span.icon-bar
+				span.icon-bar
+				span.icon-bar
+			a.brand(href='/about', style='font-size:2em;') 
+				span(style='color:white;font-weight:bold;') Minvy
+			ul.nav.nav-collapse
+				li.active
+					a(href='/')
+						i.icon-home.icon-white 
+						| Home
+				li.dropdown
+					a.dropdown-toggle(href='/', data-toggle='dropdown')
+						i.icon-calendar.icon-white 
+						| Pages
+						b.caret
+					ul.dropdown-menu
+						li
+							a(href='#') My Pages
+				li.dropdown
+					a(href='/')
+						i.icon-map-marker.icon-white 
+						| Forum
+			ul.nav.pull-right.nav-collapse
+				-if(!everyauth.loggedIn)
+					li
+						a(href='/auth')
+							i.icon-user.icon-white
+							|  Sign In
+				-if(everyauth.loggedIn)
+					li
+						a(href='/users/#{user.id}')
+							- if(isAdmin)
+								i.icon-eye-open.icon-white
+							- else
+								i.icon-user.icon-white 
+							|  #{everyauth.user.name} 
+							- if(isAdmin)
+								| ( 
+								strong(style='color:yellow') admin
+								| )
+					li
+						a(href='/logout')
+							i.icon-star-empty.icon-white
+							|  Sign Out
