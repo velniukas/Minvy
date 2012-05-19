@@ -5,13 +5,13 @@ module.exports = function() {};
 module.exports.home = function(req, res){
   log.info(req.user);
   res.render('main', {
-    title: 'Minvy Home'
+    title: 'Home'
   });
 };
 
 module.exports.about = function(req, res){
   res.render('default', {
-    title: 'Minvy About'
+    title: 'About'
   });
 };
 
@@ -21,7 +21,8 @@ module.exports.auth = function(req, res){
   });
 };
 
-module.exports.welcome = function(req, res){
+module.exports.registration = function(req, res){
+	log.info('rendering registration.');
 	res.render('registration', {
 		title: 'Welcome'
 	});

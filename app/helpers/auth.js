@@ -15,7 +15,7 @@ module.exports = function () {
 	if(redirectTo)
 		res.redirect(redirectTo);
 	else
-		res.redirect('registration');
+		res.redirect('/registration');
   };
 	
   // Google

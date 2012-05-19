@@ -50,7 +50,7 @@ module.exports = function(app) {
   app.get('/about', main.about);
   app.get('/auth', main.auth);
   // Note: All the actual authentication routes are handled by auth middleware (everyauth). Refer Auth helper for more.
-
+  app.get('/registration', main.registration);
 
   // Page
 /*  app.get('/pages', page.list);
