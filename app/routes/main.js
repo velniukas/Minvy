@@ -22,7 +22,7 @@ module.exports.auth = function(req, res){
 };
 
 module.exports.welcome = function(req, res){
-	res.render('users/welcome', {
+	res.render('registration', {
 		title: 'Welcome'
 	});
 };
