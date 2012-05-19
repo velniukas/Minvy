@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Numerous always-ignore extensions
 *.diff
 *.err
@@ -41,3 +42,20 @@ publish
 # build script local files
 build/buildinfo.properties
 build/config/buildinfo.properties
+=======
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+npm-debug.log
+>>>>>>> 25c2eac9afafd96f7e0c1afcc86c807c737ac349
