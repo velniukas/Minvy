@@ -3,7 +3,7 @@ exports.getSiteConfig = function () {
     url: 'http://localhost:3000',
     port: 3000,
     site_name: 'Minvy',
-    site_email: 'steve.g.messina@gmail.com'
+    site_email: 'minvyswhk@gmail.com'
   }
 
   return configValues;
@@ -22,8 +22,10 @@ exports.getDBConfig = function() {
 exports.getMailConfig = function () {
   configValues =  {
     host: 'smtp.gmail.com',
-    username: 'steve.g.messina@gmail.com',
-    password: 'password'
+    username: 'minvyswhk@gmail.com',
+    password: 'minvyswhk',
+    templatedir: 'email_templates',
+    registration_template: 'registration_confirmation'
   }
 
   return configValues;
