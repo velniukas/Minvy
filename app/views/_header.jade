@@ -6,31 +6,10 @@
 				span.icon-bar
 				span.icon-bar
 			a.brand(href='/about', style='font-size:2em;') 
-				span(style='color:white;font-weight:bold;') Hatch
-				span(style='color:yellow;font-weight:bold') Yolk
-			ul.nav.nav-collapse
-				li.active
-					a(href='/')
-						i.icon-home.icon-white 
-						| Home
-				li.dropdown
-					a.dropdown-toggle(href='/', data-toggle='dropdown')
-						i.icon-calendar.icon-white 
-						| Pages
-						b.caret
-					ul.dropdown-menu
-						li
-							a(href='#') My Pages
-				li.dropdown
-					a(href='/')
-						i.icon-map-marker.icon-white 
-						| Forum
+				span(style='color:white;font-weight:bold;') HatchY
+				span(style='color:yellow;font-weight:bold') o
+				span(style='color:white;font-weight:bold;') lk
 			ul.nav.pull-right.nav-collapse
-				-if(!everyauth.loggedIn)
-					li
-						a(href='/auth')
-							i.icon-user.icon-white
-							|  Sign In
 				-if(everyauth.loggedIn)
 					li
 						a(href='/users/#{user.id}')
