@@ -4,7 +4,7 @@ var User = load.model('User');
 var config = load.helper('config').auth;
 
 // TODO: Debug flag. Turn off for production use.
-everyauth.debug = true;
+everyauth.debug = false;
 
 
 module.exports = function () {
