@@ -17,7 +17,7 @@ img.repsonsive { max-width:100%; }
 .main-page .header-photo {
 	max-width: 100%;
 }
-.main-page .page-header h1 { width: 90%; }
+.main-page .page-header h1 { width: 100%; }
 
 /** Auth Page **/
 .auth-page .auth-service {
