@@ -25,6 +25,6 @@ form(method='POST', action='/page/submit/#{page._id}', id='pageForm')
     input(value='#{page.email}', name='email', id='email', class='required email')
   p
     input(type='submit', value='Save')
--if ((loggedInUser.is_root || loggedInUser.is_admin || loggedInUser._id === user._id) && user._id > 0)
-  p
-    a(href='/pages/#{page._id}/remove') Delete Page 
+//-if ((loggedInUser.is_root || loggedInUser.is_admin || loggedInUser._id === user._id) && user._id > 0)
+//  p
+//    a(href='/pages/#{page._id}/remove') Delete Page 

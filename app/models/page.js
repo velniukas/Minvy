@@ -11,15 +11,13 @@ var PageSchema = new Schema({
   id: { type: Number, unique: true, index: true },
   name: { type: String, trim: true },
   category: { type: String, trim: true },
-
   onelinepitch: { type: String },
   detailedpitch: { type: String },
   opsheader: { type: String },
-  calltoaction: { type: String }
+  calltoaction: { type: String },
   email: { type: String, index: true, trim: true },
-
   created_at: { type: Date, default: Date.now },
-  modified_at: { type: Date, default: Date.now },
+  modified_at: { type: Date, default: Date.now }
 }, {
   collection: 'pages'
 });
@@ -27,7 +25,7 @@ var PageSchema = new Schema({
 // Set default id
 PageSchema.pre('save', function(next) {
   var page = this;
-
+//  log.info("in PageSchema pre-save" + page);
 
   if(!page.id) {
     Count.getNext('page', function(error, id) {
@@ -110,8 +108,6 @@ var createNew = function(source, pageData, callback) {
     newPage.email = pageData.email;
   }
 
-  } 
-
   newPage[source] = pageData;
   newPage.save(function(error) {
     if(error) {
@@ -120,7 +116,4 @@ var createNew = function(source, pageData, callback) {
 
     callback(null, newPage);
   });
-};
-
-
-
+}

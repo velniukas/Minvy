@@ -22,8 +22,8 @@ module.exports.auth = function(req, res){
 };
 
 module.exports.registration = function(req, res){
-	log.info('rendering registration.');
-	res.render('registration', {
-		title: 'Welcome'
+	res.render('pages/new', {
+		title: 'Welcome', 
+		page: {}
 	});
 };

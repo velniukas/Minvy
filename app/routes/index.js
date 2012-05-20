@@ -57,13 +57,18 @@ module.exports = function(app) {
 
   app.get('/page/create', page.createView);
   app.post('/page/create', page.create);
-  app.get('/page/import', page.importView);
-  app.post('/page/import', page.import);
+  //app.get('/page/import', page.importView);
+  //app.post('/page/import', page.import);
 
-  app.get('/page/:pageId', validCoursePermission('page', 'read'), page.show);
-  app.get('/page/:pageId/edit', validCoursePermission('page', 'edit'), page.updateView);
-  app.put('/page/:pageId', validCoursePermission('page', 'edit'), page.update);
-  app.get('/page/:pageId/remove', validCoursePermission('page', 'delete'), page.remove);
+  app.get('/page/:pageId', page.show);
+  app.get('/page/:pageId/edit', page.updateView);
+  app.put('/page/:pageId', page.update);
+  app.get('/page/:pageId/remove', page.remove);
+
+//  app.get('/page/:pageId', validPagePermission('page', 'read'), page.show);
+//  app.get('/page/:pageId/edit', validPagePermission('page', 'edit'), page.updateView);
+//  app.put('/page/:pageId', validPagePermission('page', 'edit'), page.update);
+//  app.get('/page/:pageId/remove', validCoursePermission('page', 'delete'), page.remove);
 */
   // Admin
   app.get('/admin', admin.show);

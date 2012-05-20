@@ -46,6 +46,7 @@ load.model_init('count');
 load.model_init('metadata');
 load.model_init('role');
 load.model_init('user');
+load.model_init('page');
 
 // Migrate database schema
 // TODO: Find a way to wait before this finishes executing
