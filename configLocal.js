@@ -1,7 +1,7 @@
 exports.getSiteConfig = function () {
   configValues =  {
-    url: 'http://localhost:3000',
-    port: 3000,
+    url: 'http://localhost:80',
+    port: 80,
     site_name: 'Minvy',
     site_email: 'minvyswhk@gmail.com'
   }

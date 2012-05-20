@@ -1,0 +1,17 @@
+h1= title
+h3 Here's the pages
+p There're right around here somewhere 
+p Or right, here they are:
+ul.pages
+  - each page in pages
+    li= page.name + ' ' + page.email + '>\n'
+p Or another way
+ul.pages
+  != partial('page', pages);
+p Or a third way
+ul.pages
+  != partial('pageGlobal', {collection: pages, as: global});
+p Or a forth way
+ul.pages
+  != partial('pageLanding', {collection: pages, as: 'page'});
+

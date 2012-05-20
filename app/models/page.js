@@ -9,10 +9,15 @@ var config = load.helper('config');
 var PageSchema = new Schema({
   _id: { type: ObjectId },
   id: { type: Number, unique: true, index: true },
-  email: { type: String, index: true, trim: true },
   name: { type: String, trim: true },
-  image: { type: String },
-  roles: [{ type: String }],
+  category: { type: String, trim: true },
+
+  onelinepitch: { type: String },
+  detailedpitch: { type: String },
+  opsheader: { type: String },
+  calltoaction: { type: String }
+  email: { type: String, index: true, trim: true },
+
   created_at: { type: Date, default: Date.now },
   modified_at: { type: Date, default: Date.now },
 }, {
@@ -105,13 +110,6 @@ var createNew = function(source, pageData, callback) {
     newPage.email = pageData.email;
   }
 
-  // check against the default site admin list from console
-  if(config.admin[source] == pageData.email) {
-    log.info('New page is an admin: ', config.admin[source]);
-
-    //going to be deprecated
-    newPage['role'] = 'admin';
-    newPage.abilities.role = 'admin';
   } 
 
   newPage[source] = pageData;

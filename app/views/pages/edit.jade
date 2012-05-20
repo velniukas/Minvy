@@ -1,0 +1,6 @@
+h1= title
+h3 Here's the page
+p Edit info about the page.
+  != partial('form', page);
+p Image:
+  img(src='http://static1.robohash.com/#{page.name}')

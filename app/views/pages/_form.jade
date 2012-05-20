@@ -1,0 +1,30 @@
+form(method='POST', action='/page/submit/#{page._id}', id='pageForm')
+  p  
+    label(for="user") User: 
+    #{user.name}
+  p  
+    label(for="name") Name:
+    input(value='#{page.name}', name='name', id='name', class='required')
+  p 
+    label(for="category") Category:
+    input(value='#{page.category}', name='category', id='category')
+  p  
+    label(for="onelinepitch") One-line Pitch:
+    input(value='#{page.onelinepitch}', name='onelinepitch', id='onelinepitch', class='required')
+  p  
+    label(for="detailedpitch") Detailed Pitch:
+    input(value='#{page.detailedpitch}', name='detailedpitch', id='detailedpitch', class='required')
+  p  
+    label(for="opsheader") Ops Header:
+    input(value='#{page.opsheader}', name='opsheader', id='opsheader', class='required')
+  p  
+    label(for="calltoaction") Call to Action Description:
+    input(value='#{page.calltoaction}', name='calltoaction', id='calltoaction', class='required')
+  p
+    label(for="email") Email:
+    input(value='#{page.email}', name='email', id='email', class='required email')
+  p
+    input(type='submit', value='Save')
+-if ((loggedInUser.is_root || loggedInUser.is_admin || loggedInUser._id === user._id) && user._id > 0)
+  p
+    a(href='/pages/#{page._id}/remove') Delete Page 

@@ -1,0 +1,20 @@
+h1= title
+-if (loggedInUser.is_admin || loggedInUser.is_root || loggedInUser._id === user._id)
+  .actions 
+    ul
+      li
+        a(href='/page/#{page._id}/edit/') Edit Page
+      li
+        a(href='/page/#{page._id}/remove/') Remove Page
+h3 Here's the page
+p Some info about the page.
+p Name: #{page.name}
+p Category: #{page.category}
+p One Line Pitch: #{page.onelinepitch}
+p Detailed Pitch: #{page.detailedpitch}
+p Ops Header: #{page.opsheader}
+p Call to Action description: #{page.calltoaction}
+p Email: #{user.email}
+p Image:
+  img(src='http://static1.robohash.com/#{page.name}')
+

@@ -1,0 +1,30 @@
+h1= title
+.actions 
+  ul
+    li
+      a(href='/page/create') Add Page
+ul#userMosaic\n
+  - each page in pages
+    li\n
+      a(href='/page/#{page._id}/')
+        img(src='http://static1.robohash.com/#{user.name}.png?set=set1&size=240x240')
+        br
+        h4=page.name
+- if (loggedInUser.is_admin) 
+  table.data
+    tr
+      th Username
+      th Name
+      th Email
+      th Created on
+      th Delete
+    - each page in pages
+      - date = new Date(page.created_at)
+      - pageDate= date.toDateString()
+      tr
+        td=user.username
+        td=page.name
+        td=page.email
+        td=userDate
+        td 
+          a(href='/page/#{page._id}/remove') Delete\n
